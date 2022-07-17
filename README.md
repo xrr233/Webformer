@@ -6,9 +6,17 @@ Source code of SIGIR2022 Long Paper:
 ## Pipeline
 
 ### Preinstallation
-First, prepare a Python3 environment, and run the following commands:
-<code data-enlighter-language="raw" class="EnlighterJSRAW"></code><code data-enlighter-language="raw" class="EnlighterJSRAW">
-  git clone https://github.com/zhengyima/anchors.git anchors
-  cd anchors
+First, prepare a **Python3** environment, and run the following commands:
+```
+  git clone https://github.com/xrr233/Webformer.git Webformer
+  cd Webformer
   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-</code><code data-enlighter-language="raw" class="EnlighterJSRAW"></code>
+```
+
+### Prepare the Corpus Data
+Every piece of corpus data is the raw HTML code of a web page.
+Then run the following commands to clear irrelevant content and get the training corpus:
+```
+  python Preprocess/html2json.py 
+  python 
+```
